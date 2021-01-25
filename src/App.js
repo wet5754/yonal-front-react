@@ -1,16 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import BtnCalendar from "./BtnCalendar";
+import BtnNoCalendar from "./BtnNoCalendar";
 
 function App() {
   return (
     <div className="App">
-      Hello World!
+      <BtnCalendar/>
+      <BtnNoCalendar/>
     </div>
   );
 }
-
-
-
 
 
 
