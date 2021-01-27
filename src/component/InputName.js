@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {BrowserRouter, Route, Link} from 'react-router-dom'
 
 class InputName extends Component {
     constructor(props) {
@@ -15,7 +16,6 @@ class InputName extends Component {
     render(){
         let inputValue = React.createRef();
         
-
         return(
 
         <form onSubmit={this.handleSubmit}>
@@ -23,7 +23,9 @@ class InputName extends Component {
                 별명:
                 <input type="text" value={this.state.value} onChange={this.handleChange} placeholder = "별명" />
             </label>
-            <input type="submit" value="확인" className="btn" />
+            <Link to={{pathname: '/2',state: this.state.value}}>
+              <input type="submit" value="확인" className="btn" />
+            </Link>
         </form>
         );
     }
