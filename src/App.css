@@ -8,6 +8,19 @@
   pointer-events: none;
 }
 
+.inputGuide{
+  color: #000;
+  margin-bottom: 4px;
+	text-decoration:none;
+}
+.inputNickname{
+  border-bottom: 10;
+  padding: 3px;
+
+  border-bottom-color: black;
+  border-width: 1px;
+}
+
 .btn {
 	background-color:#405dffd7;
   border-radius:13px;
@@ -16,7 +29,7 @@
   color:#ffffff;
   margin: 5vmax;
   font-size:15px;
-	padding:8px 33px;
+	padding:6px 33px;
 	text-decoration:none;
 }
 
