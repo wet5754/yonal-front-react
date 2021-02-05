@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {BtnCalendar, BtnNoCalendar} from "../component/BtnCalendar";
+import {BtnCalendar, BtnNoCalendar} from "../../component/BtnCalendar";
 
 
 function getNickname(location){

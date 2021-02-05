@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import InputName from "../component/InputName";
+import InputName from "../../component/InputName";
 
 
 const InvitedUser1 = () => {

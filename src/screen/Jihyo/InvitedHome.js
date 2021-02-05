@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Route, Link} from 'react-router-dom'
-import yonal_logo from './yonal_logo.png'
+import yonal_logo from '../yonal_logo.png'
 
 
 const InvitedHome = () => {

@@ -1,18 +1,35 @@
 import './App.css';
 import {BrowserRouter, Route, Link} from 'react-router-dom'
-import InvitedHome from './screen/InvitedHome'
-import InvitedUser1 from './screen/InvitedUser1'
-import InvitedUser2 from './screen/InvitedUser2'
+import JihyoPage from './screen/JihyoPage'
+import SuebeenPage from './screen/SuebeenPage'
+import DeoksooPage from './screen/DeoksooPage'
+
 
 function App() {
   return (
+
     <div className="App">
       <BrowserRouter>
-        <Route path="/home" component={InvitedHome}/>
-        <Route path="/1" component={InvitedUser1}/>
-        <Route path="/2" component={InvitedUser2}/>
+
+        <Link to='./jihyo'>
+              <button className = 'btn'>지효</button>
+        </Link>
+
+        <Link to='./suebeen'>
+              <button className = 'btn'>수빈</button>
+        </Link>
+
+        <Link to='./deoksoo'>
+              <button className = 'btn'>덕수</button>
+        </Link>
+        <div>--------------------------------------------------------</div>
+        <Route path="/jihyo" component={JihyoPage}/>
+        <Route path="/suebeen" component={SuebeenPage}/>
+        <Route path="/deoksoo" component={DeoksooPage}/>
+
       </BrowserRouter>
     </div>
+  
   );
 }
 
