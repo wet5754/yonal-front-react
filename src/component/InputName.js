@@ -14,10 +14,7 @@ class InputName extends Component {
         event.preventDefault();
       }
     render(){
-        let inputValue = React.createRef();
-        
         return(
-
         <form onSubmit={this.handleSubmit}>
             <label>
                 별명:
